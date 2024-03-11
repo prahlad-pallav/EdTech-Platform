@@ -1,1 +1,1 @@
-# EdTech-Platform
+# Arya Academy Edtech Project
