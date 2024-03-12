@@ -60,11 +60,11 @@ function Navbar() {
 
   return (
     <div
-      className={`flex h-14 items-center justify-center border-b-[1px] border-b-richblack-700 ${
+      className={`flex sm:h-14 h-[150px] items-center justify-center border-b-[1px] border-b-richblue-700 ${
         location.pathname !== "/" ? "bg-white" : ""
       } transition-all duration-200`}
     >
-      <div className="flex w-11/12 max-w-maxContent items-center justify-between">
+      <div className="flex flex-col sm:flex-row gap-2 flex-wrap w-11/12 max-w-maxContent items-center justify-between">
         {/* Logo */}
         <div className="flex flex-row text-richblue-800 items-center gap-1">
         <div>
@@ -77,7 +77,7 @@ function Navbar() {
         </Link>
         </div>
         {/* Navigation links */}
-        <nav className="hidden md:block">
+        <nav className="md:block">
           <ul className="flex gap-x-6 text-richblue-800">
             {NavbarLinks.map((link, index) => (
               <li key={index}>
@@ -139,7 +139,7 @@ function Navbar() {
           </ul>
         </nav>
         {/* Login / Signup / Dashboard */}
-        <div className="hidden items-center gap-x-4 md:flex">
+        <div className="items-center gap-x-4 md:flex">
           {user && user?.accountType !== ACCOUNT_TYPE.INSTRUCTOR && (
             <Link to="/dashboard/cart" className="relative">
               <AiOutlineShoppingCart className="text-2xl text-richblue-800" />
@@ -152,23 +152,23 @@ function Navbar() {
           )}
           {token === null && (
             <Link to="/login">
-              <button className="rounded-[8px] border border-richblack-700 bg-white px-[12px] py-[8px] text-richblue-800">
+              <button className="rounded-[8px] border border-richblack-700 bg-white px-[12px] py-[4px] sm:py-[8px] mr-2 sm:mr-0 text-richblue-800">
                 Log in
               </button>
             </Link>
           )}
           {token === null && (
             <Link to="/signup">
-              <button className="rounded-[8px] border border-richblack-700 bg-white px-[12px] py-[8px] text-richblue-800">
+              <button className="rounded-[8px] border border-richblack-700 bg-white px-[12px] py-[4px] sm:py-[8px] ml-2 sm:ml-0 text-richblue-800">
                 Sign up
               </button>
             </Link>
           )}
           {token !== null && <ProfileDropdown />}
         </div>
-        <button className="mr-4 md:hidden">
+        {/* <button className="mr-4 md:hidden">
           <AiOutlineMenu fontSize={24} fill="#AFB2BF" />
-        </button>
+        </button> */}
       </div>
     </div>
   )
