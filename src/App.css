@@ -235,12 +235,16 @@ details > summary::-webkit-details-marker {
 .blackButton {
   @apply cursor-pointer rounded-md bg-richblack-800 px-[20px] py-[8px] font-semibold text-richblack-5;
 }
+
+.blueButton {
+  @apply cursor-pointer rounded-md bg-[#236FB1] px-[20px] py-[8px] font-semibold text-white;
+}
 .lable-style {
-  @apply text-[14px] text-richblue-800;
+  @apply text-[14px] text-richblack-800;
 }
 .form-style {
   @apply rounded-lg bg-pwhite p-3 text-[16px] leading-[24px] text-richblue-400 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-400 focus:outline-none;
 }
 .section_heading {
-  @apply text-2xl font-bold text-richblack-5 lg:text-4xl;
+  @apply text-2xl font-bold text-richblue-800 lg:text-4xl;
 }
