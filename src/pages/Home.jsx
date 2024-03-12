@@ -8,7 +8,7 @@ import Web from "../assets/Images/web.jpg";
 import Student from "../assets/Images/student.jpg";
 import Teacher from "../assets/Images/teacher.jpg";
 // Component Imports
-import Footer from "../components/Common/Footer"
+import Footer from "../components/Common/Footer2"
 import ReviewSlider from "../components/Common/ReviewSlider"
 import CTAButton from "../components/core/HomePage/Button"
 import CodeBlocks from "../components/core/HomePage/CodeBlocks"
@@ -24,7 +24,7 @@ function Home() {
       {/* Section 1 */}
       <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-4 text-white">
 
-      <div className="mt-[50px] text-richblack-800 lg:text-4xl sm:text-3xl">
+      <div className="mt-12 text-richblack-800 lg:text-4xl sm:text-3xl">
       Ready to embark on your learning journey?
       </div>
         {/* Become a Instructor Button */}
@@ -140,7 +140,7 @@ function Home() {
           />
         </div> */}
 
-        <div className="flex flex-row mt-[100px] justify-center items-center ">
+        <div className="flex flex-col mt-[100px] justify-center items-center sm:flex-row">
           <div className="flex flex-col max-w-[45%] gap-4">
               <div className="text-2xl text-richblack-800 font-bold text-center">
               "Unlock Your Potential with Our Courses"
@@ -167,184 +167,63 @@ function Home() {
 
         </div>
 
-        <div className="flex flex-row mt-[100px] justify-between items-center ">
-        <div>
-            <img src={Teacher} className='h-[400px]'/>
-          </div>
-
-          <div className="flex flex-col max-w-[45%] gap-4">
-              <div className="text-2xl text-richblack-800 font-bold">
+        <div className="flex flex-col-reverse mt-[100px] justify-between items-center sm:flex-row-reverse">
+          <div className="flex flex-col lg:max-w-[45%] gap-4">
+              <div className="sm:text-2xl text-xl text-richblack-800 font-bold text-center sm:text-left">
               Become an Instructor
               </div>
-              <div className="text-richblack-800">
+              <div className="text-richblack-800 sm:text-xl text-md text-center sm:text-left">
               Embark on a journey of lifelong learning as a student on our platform
               </div>
-              <div>
+
+              <div className="">
               <Link to={"/signup"}>
-                <div className="group mx-auto mt-2 w-fit rounded-full bg-[#236fb1] p-1 font-bold text-white drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-95 hover:drop-shadow-none">
+                <div className="group sm:mx-0 mx-auto mt-2 w-fit rounded-full bg-[#236fb1] p-1 font-bold text-white drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-95 hover:drop-shadow-none">
                   <div className="flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblue-800 group-hover:scale-98">
                     <p>Become an Instructor</p>
                     <FaArrowRight />
-                  </div>
+                  </div> 
                 </div>
               </Link>
               </div>
           </div>
 
-         
+          <div className="md:w-[45%]">
+            <img src={Teacher}/>
+          </div>
 
 
         </div>
 
-        <div className="flex flex-row mt-[100px] justify-between items-center ">
-          <div className="flex flex-col max-w-[45%] gap-4">
-              <div className="text-2xl text-richblack-800 font-bold">
+        <div className="flex flex-col-reverse mt-[100px] mb-[50px] justify-between items-center sm:flex-row">
+          <div className="flex flex-col lg:max-w-[45%] gap-4">
+              <div className="sm:text-2xl text-xl text-richblack-800 font-bold text-center sm:text-left">
               Become a Student
               </div>
-              <div className="text-richblack-800">
+              <div className="text-richblack-800 sm:text-xl text-md text-center sm:text-left">
               Embark on a journey of lifelong learning as a student on our platform
               </div>
-              <div>
+
+              <div className="">
               <Link to={"/signup"}>
-                <div className="group mx-auto mt-2 w-fit rounded-full bg-[#236fb1] p-1 font-bold text-white drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-95 hover:drop-shadow-none">
+                <div className="group sm:mx-0 mx-auto mt-2 w-fit rounded-full bg-[#236fb1] p-1 font-bold text-white drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-95 hover:drop-shadow-none">
                   <div className="flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblue-800 group-hover:scale-98">
                     <p>Become a Student</p>
                     <FaArrowRight />
-                  </div>
+                  </div> 
                 </div>
               </Link>
               </div>
           </div>
 
-          <div>
-            <img src={Student} className='h-[400px] '/>
+          <div className="md:w-[50%]">
+            <img src={Student}/>
           </div>
-
-
-        </div>
-
-        {/* Explore Section */}
-        {/* <ExploreMore /> */}
-
-        {/* <div className="flex flex-row mx-auto bg-[#236FB1] gap-12 mt-[100px] px-[50px] py-[100px] max-w-screen">
-          
-          <div className="flex flex-row gap-5">
-          
-            <div>
-            <img src={Teacher} className='h-[40px]'/>
-            </div>
-
-            <div className="flex flex-col">
-              <div>
-                Get Achieve New Level
-              </div>
-              <div>
-                It is the time to make your future
-              </div>
-
-            </div>
-          </div>
-
-          <div className="flex flex-row gap-5">
-          
-            <div>
-            <img src={Teacher} className='h-[40px]'/>
-            </div>
-
-            <div className="flex flex-col">
-              <div>
-                Get Achieve New Level
-              </div>
-              <div>
-                It is the time to make your future
-              </div>
-
-            </div>
-          </div>
-
-          <div className="flex flex-row gap-5">
-          
-            <div>
-            <img src={Teacher} className='h-[40px]'/>
-            </div>
-
-            <div className="flex flex-col">
-              <div>
-                Get Achieve New Level
-              </div>
-              <div>
-                It is the time to make your future
-              </div>
-
-            </div>
-          </div>
-
-        </div> */}
-      </div>
-
-      {/* Section 2 */}
-      <div className="bg-pure-greys-5 text-richblack-700">
-        {/* <div className="homepage_bg h-[320px]">
-        
-          <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8">
-            <div className="lg:h-[150px]"></div>
-            <div className="flex flex-row gap-7 text-white lg:mt-8">
-              <CTAButton active={true} linkto={"/signup"}>
-                <div className="flex items-center gap-2">
-                  Explore Full Catalog
-                  <FaArrowRight />
-                </div>
-              </CTAButton>
-              <CTAButton active={false} linkto={"/login"}>
-                Learn More
-              </CTAButton>
-            </div>
-          </div>
-        </div> */}
-
-        <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 ">
-          {/* Job that is in Demand - Section 1 */}
-          {/* <div className="mb-10 mt-[-100px] flex flex-col justify-between gap-7 lg:mt-20 lg:flex-row lg:gap-0">
-            <div className="text-4xl font-semibold lg:w-[45%] ">
-              Get the skills you need for a{" "}
-              <HighlightText text={"job that is in demand."} />
-            </div>
-            <div className="flex flex-col items-start gap-10 lg:w-[40%]">
-              <div className="text-[16px]">
-                The modern StudyNotion is the dictates its own terms. Today, to
-                be a competitive specialist requires more than professional
-                skills.
-              </div>
-              <CTAButton active={true} linkto={"/signup"}>
-                <div className="">Learn More</div>
-              </CTAButton>
-            </div>
-          </div> */}
-
-          {/* Timeline Section - Section 2 */}
-          {/* <TimelineSection /> */}
-
-          {/* Learning Language Section - Section 3 */}
-          {/* <LearningLanguageSection /> */}
         </div>
       </div>
-      
-      
 
-      {/* Section 3 */}
-      <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-white text-white">
-        {/* Become a instructor section */}
-        {/* <InstructorSection /> */}
-
-        {/* Reviws from Other Learner */}
-        {/* <h1 className="text-center text-4xl font-semibold mt-8">
-          Reviews from other learners
-        </h1>
-        <ReviewSlider /> */}
-      </div>
-
-      {/* Footer */}
-      {/* <Footer /> */}
+    
+      <Footer />
     </div>
   )
 }

@@ -4,7 +4,7 @@ import FoundingStory from "../assets/Images/FoundingStory.png"
 import BannerImage1 from "../assets/Images/aboutus1.webp"
 import BannerImage2 from "../assets/Images/aboutus2.webp"
 import BannerImage3 from "../assets/Images/aboutus3.webp"
-import Footer from "../components/Common/Footer"
+import Footer from "../components/Common/Footer2"
 import ReviewSlider from "../components/Common/ReviewSlider"
 import ContactFormSection from "../components/core/AboutPage/ContactFormSection"
 import LearningGrid from "../components/core/AboutPage/LearningGrid"
@@ -17,43 +17,41 @@ import baby_about from "../assets/Images/baby_about.jpg";
 const About = () => {
   return (
     <div>
-      <section className="flex flex-col mx-auto items-center w-11/12 max-w-maxContent text-center text-richblue-800 gap-10 py-10 ">
+      <section className="flex flex-col mx-auto items-center w-11/12 max-w-maxContent text-center text-richblue-800 gap-5 py-10 ">
 
         <div>
-          <img src={logo} className="w-[200px]"/>
+          <img src={logo} className="sm:w-[200px] w-[100px]"/>
         </div>
-        <div className="text-[34px]">
+        <div className="sm:text-[34px] text-[24px]">
         Welcome to Arya Academy
         </div>
 
-        <div className="text-[18px]">
+        <div className="sm:text-[18px] text-[14px]">
         Here we believe in the transformative power of education. Our mission is to empower learners of all ages and backgrounds to achieve their full potential through accessible, innovative, and personalized learning experiences. At Arya Academy, we envision a future where education transcends boundaries, enabling individuals to thrive in a rapidly changing world.
         </div>
       </section>
 
-      <section className="flex flex-col mx-auto items-center  text-center bg-richblue-800 text-white gap-10 py-10">
-          
-      <div className="w-11/12 max-w-maxContent">
-      <div className="text-[34px] mb-[50px]">
-        Our Story
-        </div>
-          
-          <div className="flex flex-row gap-10 items-center">
-            <div className="w-[45%]">
-              <img src={baby_about}  />
+      <section className="flex mx-auto items-center  text-center bg-richblue-800 text-white gap-10 py-10">
+                 
+          <div className="w-10/12 mx-auto max-w-maxContent">
+          <div className="flex flex-col sm:flex-row gap-10 items-center justify-between">
+            <div className="sm:w-[40%]">
+              <img src={baby_about}/>
             </div>
 
-            <div className="text-[20px] text-white w-[45%] text-center">
-            Arya Academy was founded in [year] by a team of passionate educators and technologists who shared a common vision: to revolutionize education through the seamless integration of technology and pedagogy. Since our inception, we have been committed to providing high-quality, engaging, and effective learning solutions to students around the globe. Over the years, we have reached significant milestones, expanding our course offerings, enhancing our platform, and positively impacting the lives of thousands of learners.
+            <div className="flex flex-col sm:items-start gap-4 sm:w-[45%]">
+            <div className="sm:text-3xl text-xl font-semibold text-yellow-50">
+              Our Story
             </div>
-            
-            <div>
+            <div className="sm:text-[16px] text-[14px] text-white sm:text-start">
+            Arya Academy was founded in 2024 by a team of passionate educators and technologists who shared a common vision: to revolutionize education through the seamless integration of technology and pedagogy. Since our inception, we have been committed to providing high-quality, engaging, and effective learning solutions to students around the globe. Over the years, we have reached significant milestones, expanding our course offerings, enhancing our platform, and positively impacting the lives of thousands of learners.
+            </div>
+            </div>
 
             </div>
-
           </div>
 
-      </div>
+
       </section>
 
 

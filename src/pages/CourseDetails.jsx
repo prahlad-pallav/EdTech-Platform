@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { useNavigate, useParams } from "react-router-dom"
 
 import ConfirmationModal from "../components/Common/ConfirmationModal"
-import Footer from "../components/Common/Footer"
+import Footer from "../components/Common/Footer2"
 import RatingStars from "../components/Common/RatingStars"
 import CourseAccordionBar from "../components/core/Course/CourseAccordionBar"
 import CourseDetailsCard from "../components/core/Course/CourseDetailsCard"
@@ -127,7 +127,7 @@ function CourseDetails() {
 
   return (
     <>
-      <div className={`relative w-full bg-richblack-800`}>
+      <div className={`relative w-full bg-richblue-800`}>
         {/* Hero Section */}
         <div className="mx-auto box-content px-4 lg:w-[1260px] 2xl:relative ">
           <div className="mx-auto grid min-h-[450px] max-w-maxContentTab justify-items-center py-8 lg:mx-0 lg:justify-items-start lg:py-0 xl:max-w-[810px]">
