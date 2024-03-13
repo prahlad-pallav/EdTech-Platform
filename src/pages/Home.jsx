@@ -21,6 +21,10 @@ import TimelineSection from "../components/core/HomePage/Timeline"
 function Home() {
   return (
     <div>
+      {/* Disclaimer */}
+
+      <div className="flex mx-auto text-[#FF0000]">This app is under maintainance. Some of the features might not be working properly.</div>
+
       {/* Section 1 */}
       <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-4 text-white">
 
