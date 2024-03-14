@@ -29,12 +29,12 @@ function Course_Card({ course, Height }) {
             />
           </div>
           <div className="flex flex-col gap-2 px-1 py-3">
-            <p className="text-xl text-richblack-5">{course?.courseName}</p>
-            <p className="text-sm text-richblack-50">
+            <p className="text-xl text-[#236FB1]">{course?.courseName}</p>
+            <p className="text-sm text-richblue-800">
               {course?.instructor?.firstName} {course?.instructor?.lastName}
             </p>
             <div className="flex items-center gap-2">
-              <span className="text-yellow-5">{avgReviewCount || 0}</span>
+              <span className="text-richblack-400">{avgReviewCount || 0}</span>
               {/* <ReactStars
                 count={5}
                 value={avgReviewCount || 0}
@@ -49,7 +49,7 @@ function Course_Card({ course, Height }) {
                 {course?.ratingAndReviews?.length} Ratings
               </span>
             </div>
-            <p className="text-xl text-richblack-5">Rs. {course?.price}</p>
+            <p className="text-xl text-richblue-800">Rs. {course?.price}</p>
           </div>
         </div>
       </Link>

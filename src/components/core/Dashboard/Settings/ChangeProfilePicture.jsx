@@ -79,7 +79,7 @@ export default function ChangeProfilePicture() {
               <button
                 onClick={handleClick}
                 disabled={loading}
-                className="cursor-pointer rounded-md bg-richblack-700 py-2 px-5 font-semibold text-richblack-50"
+                className="cursor-pointer rounded-md bg-yellow-50 py-2 px-5 font-semibold text-richblue-800"
               >
                 Select
               </button>
@@ -88,7 +88,7 @@ export default function ChangeProfilePicture() {
                 onclick={handleFileUpload}
               >
                 {!loading && (
-                  <FiUpload className="text-lg text-richblack-900" />
+                  <FiUpload className="text-lg text-white" />
                 )}
               </IconBtn>
             </div>

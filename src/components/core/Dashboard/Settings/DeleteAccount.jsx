@@ -36,7 +36,7 @@ export default function DeleteAccount() {
           </div>
           <button
             type="button"
-            className="w-fit cursor-pointer italic text-pink-300"
+            className="w-fit cursor-pointer italic text-yellow-100"
             onClick={handleDeleteAccount}
           >
             I want to delete my account.

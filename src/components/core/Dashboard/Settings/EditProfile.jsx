@@ -31,7 +31,7 @@ export default function EditProfile() {
     <>
       <form onSubmit={handleSubmit(submitProfileForm)}>
         {/* Profile Information */}
-        <div className="my-10 flex flex-col gap-y-6 rounded-md border-[1px] border-richblack-700 bg-richblue-800 p-8 px-12">
+        <div className="my-10 flex flex-col gap-y-6 rounded-md border-[1px] border-richblue-700 bg-richblue-800 p-8 px-12">
           <h2 className="text-lg font-semibold text-richblack-5">
             Profile Information
           </h2>
@@ -50,7 +50,7 @@ export default function EditProfile() {
                 defaultValue={user?.firstName}
               />
               {errors.firstName && (
-                <span className="-mt-1 text-[12px] text-yellow-100">
+                <span className="-mt-1 text-[12px]">
                   Please enter your first name.
                 </span>
               )}
@@ -78,7 +78,7 @@ export default function EditProfile() {
 
           <div className="flex flex-col gap-5 lg:flex-row">
             <div className="flex flex-col gap-2 lg:w-[48%]">
-              <label htmlFor="dateOfBirth" className="lable-style">
+              <label htmlFor="dateOfBirth" className="lable-style text-yellow-100">
                 Date of Birth
               </label>
               <input
